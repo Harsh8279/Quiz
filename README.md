@@ -6,26 +6,13 @@ If the login credentials are correct then the system displays the menu and accor
 Database ==> project_networking_db
 
 ## Tables 
-
-+---------------------------------+
-| Tables_in_project_networking_db |
-+---------------------------------+
-| quiz                            |
-| student                         |
-+---------------------------------+
+==> quiz and student
 
 ## schema of quiz table
 
-+----------+--------------+------+-----+---------+-------+
-| Field    | Type         | Null | Key | Default | Extra |
-+----------+--------------+------+-----+---------+-------+
-| id       | int(11)      | NO   | PRI | NULL    |       |
-| question | varchar(255) | NO   |     | NULL    |       |
-| op1      | varchar(50)  | NO   |     | NULL    |       |
-| op2      | varchar(50)  | NO   |     | NULL    |       |
-| op3      | varchar(50)  | NO   |     | NULL    |       |
-| op4      | varchar(50)  | NO   |     | NULL    |       |
-| answer   | varchar(50)  | NO   |     | NULL    |       |
-+----------+--------------+------+-----+---------+-------+
+Primary key -> id -> int(11) | question -> varchar(255) | op1 -> varchar(50) | op2 -> varchar(50) | op3 -> varchar(50)| op4 -> varchar(50) | answer -> varchar(50)
 
 
+## schema of student table
+
+Primary key -> id -> int(11) | username -> varchar(20) | password -> varchar(20)| email -> varchar(20) | result -> int(11)
